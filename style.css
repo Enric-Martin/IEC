@@ -1,0 +1,131 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--main-color);
+}
+
+/* Header section */
+header {
+  background-color: var(--bg-color);
+  padding: 1rem 2rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#logo {
+  display: inline;
+  padding: 1rem;
+  width: 200px;
+  height: auto;
+}
+
+#title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+/* Navigation section */
+nav {
+  background-color: var(--second-bg-color);
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 1rem;
+  display: flex;
+  color: var(--text-color);
+  font-weight: bold;
+  width: 100%;
+  justify-content: center;
+}
+
+nav ul a {
+  color: var(--text-color);
+  font-size: 20px;
+  margin: 0 3px 0 3px;
+}
+
+nav ul a:hover {
+  color: beige;
+  border-bottom: 3px solid var(--main-color);
+}
+
+/* Show case section */
+
+.show-case {
+  position: relative;
+  background-image: url(images/cables.jpg);
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+
+.content {
+  width: 40vw;
+  height: 60vh;
+  border: 2px solid red;
+  color: var(--text-color);
+  margin: 2.5rem 0 1rem 3rem;
+}
+
+#titular {
+  margin: 2.5rem 0 1rem 3rem;
+  font-size: 2.5rem;
+}
+
+.content h3 {
+  margin: 2.5rem 0 1rem 3rem;
+  padding: 0 5rem 0 0;
+}
+
+.content button {
+  margin: 2.5rem 0 1rem 3rem;
+}
+
+.btn {
+  font-size: 25px;
+  padding: 7px 10px 7px 10px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+  transition: 2s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--bg-color);
+}
+/* Footer section */
+
+footer {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 2rem 1rem 2rem 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
