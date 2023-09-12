@@ -4,36 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Instal·lacions Elèctriques i de Control</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
   </head>
   <body>
     <!-- Header section -->
     <header>
-      <img src="images/logo.png" id="logo" alt="IEC logo" />
+      <div class="header">
+        <img src="images/logo.png" id="logo" alt="IEC logo" />
 
-      <h1 id="title">Instal·lacions Elèctriques i de Control</h1>
+        <h1 id="title">Instal·lacions Elèctriques i de Control</h1>
+      </div>
     </header>
 
     <!-- Navigation section -->
     <nav>
       <ul>
-        <a href="#">Home</a>
-      </ul>
-      <ul>
-        <a href="#">Serveis</a>
-      </ul>
-      <ul>
-        <a href="#">Sobre nosaltres</a>
-      </ul>
-      <ul>
-        <a href="#">Clients</a>
-      </ul>
-      <ul>
-        <a href="#">Contacte</a>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Serveis</a></li>
+        <li><a href="#">Sobre nosaltres</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contacte</a></li>
+        <li>Tel: 972 856 245</li>
       </ul>
     </nav>
 
@@ -41,32 +34,35 @@
 
     <main>
       <section class="show-case">
-        <div class="content">
-          <h1 id="titular">Solucions a processos industrials</h1>
-          <h3>
-            A IEC, analitzem les necessitats dels nostres clients per oferir
-            solucions als processos de producció en matèria d'instal·lacions
-            elèctriques i automatització.
-          </h3>
-          <button class="btn">Contactar</button>
+        <div class="show-case-content">
+          <div class="content">
+            <h1 id="titular">Solucions a processos industrials</h1>
+            <h3>
+              A IEC, analitzem les necessitats dels nostres clients per oferir
+              solucions als processos de producció en matèria d'instal·lacions
+              elèctriques i automatització.
+            </h3>
+            <button class="btn"> Contactar</button>
+          </div>
         </div>
       </section>
-      <section class="programacio">
-        <h3>Programació</h3>
-        <div class="container">
-          <img src="images/plc.jpg" alt="Siemens plc" />
-          <div class="inside-flex">
-            <h3>Siemens i Omron</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Assumenda officiis maiores ut amet sint libero voluptatibus
-              inventore, perspiciatis repudiandae ipsam pariatur dolorem vitae
-              fugit corrupti sit similique molestias aspernatur dolore saepe
-              velit nobis officia voluptate enim! Fugit vel laudantium, nam,
-              officiis sed culpa minima dolor perspiciatis fuga esse, doloribus
-              quo!
-            </p>
+      <section class="serveis">
+        <h3>Serveis</h3>
+        <div class="serveis-container">
+          <div class="instalacions">
+            <h4><i class="icon fa-solid fa-bolt"></i>
+              Instal·lacions Elèctriques</h4>
+            <p>Realitzem tota mena d'instal·lacions elèctriques tant per estructures industrials y maquinària. Creem armaris elèctrics fets a mida pels nostres clients, per distribucions de baixa tensió y control de les instal·lacions.</p>
           </div>
+          <div class="programacio">
+            <h4><i class="icon fa-solid fa-laptop-code"></i> Programació</h4>
+            <p>Dissenyem i programem una gran varietat de sistemes de control de plcs, per la gestió de les instal·lacions i automatització de maquinària. També construïm interfases gràfiques i intuïtives, per facilitar-ne el seu ús.</p>
+          </div>
+          <div class="manteniment">
+            <h4><i class="icon fa-solid fa-wrench"></i> Manteniment</h3>
+              <p>Realitzem tasques de manteniment elèctric i reparació a tota mena d'instal·lacions o maquinària industrial. Un gran nombre de clients ja confien en nosaltres per la gestió del seu manteniment.</p>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -80,41 +76,42 @@
           <img src="images/empresas/Itisa.jpg" alt="Itisa" />
           <img src="images/empresas/noel.jpg" alt="Noel" />
           <img src="images/empresas/frit-ravich.jpg" alt="Frit Ravich" />
+          <img src="images/empresas/domo.jpg" alt="Domo" />
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="log-info">
-        <img src="images/logo.png" id="footer-logo" alt="footer-logo" />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi labore
-          dolorum neque sapiente consectetur. Perferendis tempore laboriosam
-          atque necessitatibus ab?
-        </p>
-      </div>
-
-      <div class="links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Serveis</a></li>
-          <li><a href="#">Empresa</a></li>
-          <li><a href="#">Clients</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">On som?</a></li>
-          <li><a href="#">Contacte</a></li>
-          <li><a href="#">Politica Privacitat</a></li>
-          <li><a href="#">Avís Legal</a></li>
-        </ul>
-      </div>
-
-      <div class="contacte">
-        <h3>Pol. Ind Can Pruna, Av. Tramuntana, 5</h3>
-        <h3>17421 Riudarenes, (Girona)</h3>
-        <h3>Tel: +34 972 856 245</h3>
-        <h3>Horari: 8:00 a 13:00 y 15:00 a 18:00</h3>
-        <h3>iec@iecsl.com</h3>
+      <div class="footer-container">
+        <div class="log-info">
+          <img src="images/logo.png" id="footer-logo" alt="footer-logo" />
+          <p>
+            El nostre compromis es amb la qualitat del nostre treball i la satisfacció de la feina ben feta, que ha donat confiança als nostres clients per mes de XX anys.
+          </p>
+        </div>
+  
+        <div class="links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Serveis</a></li>
+            <li><a href="#">Empresa</a></li>
+            <li><a href="#">Clients</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://goo.gl/maps/kmfKJVWpjSkSgvep9">On som?</a></li>
+            <li><a href="#">Contacte</a></li>
+            <li><a href="#">Politica Privacitat</a></li>
+            <li><a href="#">Avís Legal</a></li>
+          </ul>
+        </div>
+  
+        <div class="contacte">
+          <h4>Pol. Ind Can Pruna, Av. Tramuntana, 5</h4>
+          <h4>17421 Riudarenes, (Girona)</h4>
+          <h4>Tel: +34 972 856 245</h4>
+          <h4>Horari: 8:00 a 13:00 y 15:00 a 18:00</h4>
+          <h4>iec@iecsl.com</h3>
+        </div>
       </div>
     </footer>
 
