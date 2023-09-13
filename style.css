@@ -250,7 +250,7 @@ nav ul li a:hover {
 /* Parlem section */
 .parlem {
   width: 100%;
-  background-color: grey;
+  background: url(images/planos-bg.jpg);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -260,7 +260,6 @@ nav ul li a:hover {
 
 .parlem-container {
   max-width: 1200px;
-  border: 1px solid red;
   color: var(--text-color);
   text-align: center;
   justify-content: center;
