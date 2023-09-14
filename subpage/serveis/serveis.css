@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* CCS Styles */
+* {
+  font-family: "Roboto", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #1091c4;
+  --h3-size: 2.5rem;
+}
+
+.main-serveis {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-serveis h1 {
+  color: var(--text-color);
+  width: 18%;
+  text-align: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.container-serveis {
+  max-width: 1200px;
+}
+
+/* Containers Electricitat */
+
+.foto-electricitat,
+.foto-programacio,
+.foto-manteniment {
+  width: 45%;
+  border-radius: 15px;
+  margin: 2.5rem;
+}
+
+.servei-electricitat,
+.servei-programacio,
+.servei-manteniment {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  border: 5px solid white;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  transition: 2s ease;
+}
+
+.servei-electricitat:hover,
+.servei-programacio:hover,
+.servei-manteniment:hover {
+  background-color: var(--second-bg-color);
+}
+
+.content-electricitat,
+.content-programacio,
+.content-manteniment {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-electricitat h2,
+.content-programacio h2,
+.content-manteniment h2 {
+  margin: 2.5rem 0 1rem 0;
+}
+
+.content-electricitat p,
+.content-programacio p,
+.content-manteniment p {
+  padding: 1rem 2rem 1rem 1rem;
+  margin-right: 1rem;
+  text-align: justify;
+}
