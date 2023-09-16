@@ -17,7 +17,10 @@
   --second-bg-color: #112e42;
   --text-color: #ededed;
   --main-color: #1091c4;
-  --h3-size: 2.5rem;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
+  --margin-bottom: 2.5rem;
 }
 
 .main-serveis {
@@ -30,15 +33,17 @@
   justify-content: center;
 }
 
-.main-serveis h1 {
+.main-serveis h2 {
   color: var(--text-color);
-  width: 18%;
+  width: 100%;
   text-align: center;
   margin: 1.5rem 0 1.5rem 0;
+  font-size: var(--h2-size);
 }
 
 .container-serveis {
   max-width: 1200px;
+  margin-bottom: var(--margin-bottom);
 }
 
 /* Containers Electricitat */
@@ -56,6 +61,7 @@
 .servei-manteniment {
   display: flex;
   justify-content: center;
+  align-items: center;
   max-width: 1000px;
   border: 5px solid white;
   border-radius: 10px;
@@ -77,18 +83,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-right: 1rem;
 }
 
-.content-electricitat h2,
-.content-programacio h2,
-.content-manteniment h2 {
-  margin: 2.5rem 0 1rem 0;
+.content-electricitat h3,
+.content-programacio h3,
+.content-manteniment h3 {
+  margin: 2.5rem 1rem 1rem 0;
+  font-size: var(--h3-size);
 }
 
 .content-electricitat p,
 .content-programacio p,
 .content-manteniment p {
   padding: 1rem 2rem 1rem 1rem;
-  margin-right: 1rem;
   text-align: justify;
 }

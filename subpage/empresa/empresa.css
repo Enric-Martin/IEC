@@ -1,0 +1,119 @@
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #1091c4;
+  --h2-size: 3rem;
+  --h3-size: 2rem;
+  --h4-size: 1.5rem;
+  --margin-bottom: 2.5rem;
+}
+
+.main-empresa {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-empresa h2 {
+  font-size: var(--h2-size);
+  text-align: center;
+  color: white;
+  align-items: center;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.container-empresa {
+  max-width: 1200px;
+  padding: 10px;
+  margin-bottom: 2.5rem;
+}
+
+/* Introduccio */
+.container-introducio {
+  display: flex;
+  color: white;
+}
+
+.container-introducio img {
+  width: 500px;
+  border-radius: 15px;
+  margin: 2rem;
+}
+
+.content-introducio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-introducio h3,
+.content-historia h3,
+.content-futur h3 {
+  font-size: var(--h3-size);
+  margin-bottom: 1.5rem;
+}
+
+.content-introducio p {
+  padding: 0 1rem 0 0;
+  text-align: justify;
+  width: 70%;
+}
+
+/* Historia */
+
+.container-historia {
+  display: flex;
+}
+
+.container-historia img {
+  width: 500px;
+  border-radius: 15px;
+  margin: 2rem;
+}
+
+.content-historia {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-historia p {
+  padding: 0 1rem 0 0;
+  text-align: justify;
+  width: 70%;
+}
+
+/*Futur*/
+
+.container-futur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-futur img {
+  width: 700px;
+  border-radius: 15px;
+  margin: 2rem;
+}
+
+.content-futur {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-futur p {
+  padding: 0 1rem 0 0;
+  text-align: justify;
+  width: 70%;
+}

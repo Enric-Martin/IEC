@@ -33,8 +33,93 @@
 
     <!-- Main section -->
 
-    <main>
-      <h1>This is the main contacte</h1>
+    <main class="main-contacte">
+      <h1>Contacte amb nosalters</h1>
+
+      <div class="contanier-contacte">
+        <div class="container-info">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1486.8800951319975!2d2.7250765!3d41.8119262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb21b7866b4f49%3A0xcea0d56fc14903af!2sInstalaciones%20Electricas%20Y%20De%20Control!5e0!3m2!1ses!2sth!4v1694862705374!5m2!1ses!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="info">
+            <h2>IEC</h2>
+            <h4>Pol. Ind Can Pruna, Av. Tramuntana, 5</h4>
+            <h4>17421 Riudarenes, (Girona)</h4>
+            <h4>Tel: +34 972 856 245</h4>
+            <h4>Horari: 8:00 a 13:00 y 15:00 a 18:00</h4>
+            <h4>iec@iecsl.com</h3>
+          </div>
+        </div>
+  
+        <div class="contact-container">
+          <h3>Envíens un Email</h3>
+          <form id="contact-form" method="post" action="#">
+
+            <div class="input-box">
+              <div class="input-field">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nom"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
+    
+              <div class="input-field">
+                <input
+                  type="Email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
+            </div>
+    
+            <div class="input-box">
+              <div class="input-field">
+                <input
+                  type="tel"
+                  id="number"
+                  name="number"
+                  placeholder="Telèfon"
+                />
+                <span class="focus"></span>
+              </div>
+    
+              <div class="input-field">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Motiu"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
+              
+            </div>
+    
+            <div class="textarea-field">
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="El teu missatge"
+                required
+              ></textarea>
+              <span class="focus"></span>
+              
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+      </div>
+      
     </main>
 
     <!-- Footer section -->
