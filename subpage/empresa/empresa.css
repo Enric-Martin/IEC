@@ -96,6 +96,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: var(--margin-bottom);
 }
 
 .container-futur img {
