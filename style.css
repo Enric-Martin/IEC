@@ -17,7 +17,8 @@
   --bg-color: #081b29;
   --second-bg-color: #112e42;
   --text-color: #ededed;
-  --main-color: #1091c4;
+  --btn-color: #1091c4;
+  --main-color: #006699;
   --h2-size: 3rem;
   --h3-size: 2rem;
   --h4-size: 1.5rem;
@@ -93,7 +94,11 @@ nav ul a {
 }
 
 nav ul li a:hover {
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--btn-color);
+}
+
+#menu-burger {
+  display: none;
 }
 
 /* Show case section */
@@ -145,7 +150,7 @@ nav ul li a:hover {
   font-size: 25px;
   padding: 7px 10px 7px 10px;
   border-radius: 5px;
-  background-color: var(--main-color);
+  background-color: var(--btn-color);
   color: var(--text-color);
   transition: 2s ease;
 }
@@ -354,7 +359,7 @@ footer {
 }
 
 .links ul li a:hover {
-  border-bottom: 3px solid var(--main-color);
+  border-bottom: 3px solid var(--btn-color);
 }
 
 .contacte {
@@ -364,3 +369,376 @@ footer {
 .contacte h4 {
   padding: 5px 0 5px 0;
 }
+
+/* Media Queries or Breack Points */
+
+@media (max-width: 1201px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 850px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 520px) {
+}
+
+@media (max-width: 400px) {
+}
+
+@media (max-width: 376px) {
+  /* Header settings */
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 150px;
+    border-radius: 0px;
+  }
+
+  #title {
+    font-size: 1.65rem;
+    overflow-x: hidden;
+  }
+
+  /* Navigation settings */
+  #menu-burger {
+    display: block;
+  }
+
+  nav ul li {
+    display: none;
+    overflow-x: hidden;
+  }
+
+  /* Showcase Section */
+  .show-case {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    background: url(images/background-2.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .show-case-content {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 375px;
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 375px;
+    height: auto;
+    margin: 0;
+  }
+
+  .content #titular {
+    font-size: var(--h3-size);
+    margin: 9rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .content h4 {
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0 1rem 0;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .content a .btn {
+    margin: 0;
+    margin: 2.5rem 0 10rem 0;
+  }
+
+  /* Serveis Section */
+  .serveis {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .serveis h2 {
+    font-size: var(--h3-size);
+  }
+
+  .serveis-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .serveis-container .instalacions,
+  .serveis-container .programacio,
+  .serveis-container .manteniment {
+    width: 90%;
+    border: 5px solid white;
+  }
+
+  .instalacions,
+  .programacio,
+  .manteniment {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  /* Carrusel de marcas */
+  .carrusel-marcas {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    margin-bottom: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .carrusel-marcas h2 {
+    font-size: var(--h3-size);
+  }
+
+  .marcas img {
+    margin-bottom: 0;
+  }
+
+  .marcas {
+    margin-bottom: 0;
+  }
+
+  /* Parlem section */
+  .parlem {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .parlem-container {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .parlem-container h2 {
+    width: 375px;
+    font-size: var(--h3-size);
+    padding: 0 1rem 0 1rem;
+  }
+
+  .parlem-container a .btn {
+    font-size: 22px;
+  }
+
+  /* Footer */
+  .footer-container {
+    width: 375px;
+    height: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .footer-container .links {
+    justify-content: center;
+  }
+
+  .footer-container .contacte {
+    text-align: center;
+  }
+}
+
+/******* With until 360px *********
+
+@media (max-width: 360px) {
+  header {
+    overflow-x: hidden;
+    width: 360px;
+  }
+
+  .header {
+    width: 360px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 125px;
+    border-radius: 0px;
+  }
+
+  #title {
+    width: 360px;
+    height: auto;
+    font-size: 1.25rem;
+    border: 1px solid green;
+  }
+
+  /* Navigation settings 
+  #menu-burger {
+    display: block;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  /* Showcase Section 
+  .show-case {
+    background: url(images/background-2.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .show-case-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 360px;
+    height: auto;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 360px;
+    height: auto;
+    margin: 0;
+  }
+
+  .content #titular {
+    font-size: var(--h3-size);
+    margin: 9rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .content h4 {
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0 1rem 0;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .content a .btn {
+    margin: 0;
+    margin: 2.5rem 0 10rem 0;
+  }
+
+  /* Serveis Section 
+  .serveis {
+    width: 360px;
+  }
+
+  .serveis h2 {
+    font-size: var(--h3-size);
+  }
+
+  .serveis-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: auto;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .serveis-container .instalacions,
+  .serveis-container .programacio,
+  .serveis-container .manteniment {
+    width: 90%;
+    border: 5px solid white;
+  }
+
+  .instalacions,
+  .programacio,
+  .manteniment {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  /* Carrusel de marcas
+  .carrusel-marcas {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .carrusel-marcas h2 {
+    font-size: var(--h3-size);
+  }
+
+  .marcas img {
+    margin-bottom: 0;
+  }
+
+  .marcas {
+    margin-bottom: 0;
+  }
+
+  /* Parlem section 
+  .parlem {
+    width: 360px;
+  }
+
+  .parlem-container h2 {
+    width: 360px;
+    font-size: var(--h3-size);
+    padding: 0 1rem 0 1rem;
+  }
+
+  .parlem-container a .btn {
+    font-size: 22px;
+  }
+
+  /* Footer 
+  .footer-container {
+    width: 360px;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .footer-container .links {
+    justify-content: center;
+  }
+
+  .footer-container .contacte {
+    text-align: center;
+  }
+}*/
