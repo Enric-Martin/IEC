@@ -307,7 +307,7 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 100px;
   border-bottom: 20px solid black;
 }
@@ -315,6 +315,7 @@ footer {
 .footer-container {
   max-width: 1200px;
   display: flex;
+  justify-content: space-around;
   gap: 1rem;
 }
 
@@ -372,27 +373,109 @@ footer {
 
 /* Media Queries or Breack Points */
 
-@media (max-width: 1201px) {
+@media all and (min-width: 1700px) and (max-width: 1921px) {
   header {
-    width: 1200px;
+    width: 1920px;
     height: auto;
     overflow-x: hidden;
   }
-}
 
-@media (max-width: 991px) {
-  header {
-    width: 1200px;
-    height: auto;
+  nav {
+    width: 1920px;
     overflow-x: hidden;
+    height: auto;
+  }
+
+  .show-case {
+    background-size: cover;
+    width: 1920px;
+    overflow-x: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .serveis {
+    align-items: center;
+    width: 1920px;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  .carrusel-marcas {
+    width: 1920px;
+    overflow-x: hidden;
+    height: auto;
+    padding-bottom: 2.5rem;
+  }
+
+  .parlem {
+    width: 1920px;
+    overflow-x: hidden;
+    height: auto;
+  }
+
+  footer {
+    width: 1920px;
+    overflow-x: hidden;
+    height: auto;
   }
 }
 
-@media (max-width: 850px) {
-  header {
-    width: 1200px;
+@media all and (min-width: 1200px) and (max-width: 1333px) {
+  #titular {
+    width: 110%;
+  }
+
+  .show-case-content .content h4 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 950px) and (max-width: 1200px) {
+  .show-case-content {
+    width: 100%;
+  }
+
+  .show-case-content .content {
+    width: 60%;
+  }
+
+  #titular {
+    width: 110%;
+  }
+}
+
+@media all and (min-width: 850px) and (max-width: 950px) {
+  .show-case {
+    width: 100%;
     height: auto;
-    overflow-x: hidden;
+    margin: 0;
+    border: 1px solid green;
+  }
+  .show-case-content .content {
+    width: 70%;
+  }
+}
+
+@media all and (min-width: 750px) and (max-width: 850px) {
+  .show-case {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+  }
+
+  .show-case-content {
+    border: 1px solid orange;
+  }
+
+  .show-case-content .content {
+    width: 70%;
+    height: auto;
   }
 }
 
