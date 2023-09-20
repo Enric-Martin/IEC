@@ -19,6 +19,7 @@
   --text-color: #ededed;
   --btn-color: #1091c4;
   --main-color: #006699;
+  --h1--size: 4rem;
   --h2-size: 3rem;
   --h3-size: 2rem;
   --h4-size: 1.5rem;
@@ -107,7 +108,7 @@ nav ul li a:hover {
   position: relative;
   background-image: url(images/background-2.jpg);
   width: 100%;
-  height: 75vh;
+  height: 60vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,11 +129,11 @@ nav ul li a:hover {
   width: 40vw;
   height: 60vh;
   color: var(--text-color);
-  margin: 2.5rem 0 1rem 3rem;
+  /* margin: 2.5rem 0 1rem 3rem;*/
 }
 
 #titular {
-  margin: 2.5rem 0 1rem 3rem;
+  margin: 3rem 0 1rem 3rem;
   font-size: var(--h2-size);
 }
 
@@ -373,7 +374,80 @@ footer {
 
 /* Media Queries or Breack Points */
 
-@media all and (min-width: 1700px) and (max-width: 1921px) {
+@media all and (max-width: 2561px) and (min-width: 1933px) {
+  #title {
+    font-size: var(--h2-size);
+  }
+
+  nav ul li {
+    font-size: var(--h3-size);
+    padding: 0 1rem 0 1rem;
+  }
+
+  #titular {
+    font-size: var(--h1--size);
+    margin-top: 10rem;
+  }
+
+  .content h4 {
+    font-size: var(--h3-size);
+  }
+
+  .content .btn {
+    font-size: var(--h3-size);
+  }
+
+  .serveis-container {
+    width: 1600px;
+  }
+
+  .serveis h2 {
+    font-size: var(3.5rem);
+  }
+
+  .instalacions h4,
+  .programacio h4,
+  .manteniment h4 {
+    font-size: var(--h3-size);
+  }
+
+  .instalacions p,
+  .programacio p,
+  .manteniment p {
+    font-size: var(--h4-size);
+  }
+
+  .carrusel-marcas h2 {
+    font-size: var(3.5rem);
+  }
+
+  .parlem-container h2 {
+    font-size: var(3.5rem);
+  }
+
+  .parlem-container h4 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container .btn {
+    font-size: var(--h3-size);
+  }
+
+  .footer-container {
+    width: 1500px;
+  }
+
+  .footer-container p {
+    font-size: 1.25rem;
+  }
+
+  .links ul li a,
+  .contacte h4 {
+    font-size: var(--h4-size);
+  }
+}
+
+@media all and (max-width: 1921px) and (min-width: 1700px) {
   header {
     width: 1920px;
     height: auto;
@@ -426,7 +500,20 @@ footer {
   }
 }
 
-@media all and (min-width: 1200px) and (max-width: 1333px) {
+@media all and (max-width: 1333px) and (min-width: 1200px) {
+  .show-case {
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .show-case-content .content {
+    margin-left: 2rem;
+    height: 40vh;
+    width: 50vw;
+  }
+
   #titular {
     width: 110%;
   }
@@ -436,13 +523,25 @@ footer {
   }
 }
 
-@media all and (min-width: 950px) and (max-width: 1200px) {
-  .show-case-content {
+@media all and (max-width: 1200px) and (min-width: 950px) {
+  .show-case {
+    height: 55vh;
+    padding: 0;
+    margin: 0;
     width: 100%;
   }
 
+  .show-case-content {
+    width: 100%;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+  }
+
   .show-case-content .content {
-    width: 60%;
+    margin-left: 2rem;
+    height: 45vh;
+    width: 60vw;
   }
 
   #titular {
@@ -450,356 +549,285 @@ footer {
   }
 }
 
-@media all and (min-width: 850px) and (max-width: 950px) {
+@media all and (max-width: 950px) and (min-width: 850px) {
   .show-case {
-    width: 100%;
-    height: auto;
+    height: 55vh;
+    padding: 0;
     margin: 0;
-    border: 1px solid green;
+    width: 100%;
   }
+
   .show-case-content .content {
-    width: 70%;
+    margin-left: 2rem;
+    height: 45vh;
+    width: 70vw;
+  }
+
+  .show-case-content .content h4 {
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .log-info {
+    padding: 0;
+    margin: 0;
   }
 }
 
-@media all and (min-width: 750px) and (max-width: 850px) {
+@media all and (max-width: 850px) and (min-width: 810px) {
+  body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .show-case {
+    height: 55vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .show-case-content {
+    width: 100%;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .show-case-content .content {
+    margin-left: 2rem;
+    height: 45vh;
+    width: 70vw;
+    padding: 0;
+  }
+
+  #titular {
+    margin-top: 1rem;
+    width: 110%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .log-info {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 810px) and (min-width: 793px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    border: 3px solid goldenrod;
+  }
+
+  #phone::before {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul li:first-child {
+    display: none;
+  }
+
   .show-case {
     width: 100%;
+    height: 50vh;
+  }
+
+  .show-case-content .content {
+    margin-left: 2rem;
+    width: 70%;
     height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .log-info {
+    padding: 0;
+    margin: 0;
+  }
+
+  .log-info a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .log-info p {
+    padding: 15;
+    margin: 0px;
+  }
+
+  .links {
+    gap: 0.25rem;
+  }
+
+  .contacte {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 792px) and (min-width: 600px) {
+  body {
+    width: 100vw;
+    border: 5px solid yellow;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+  }
+  ul {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  main {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .show-case {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .show-case-content {
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #titular {
+    width: 70%;
+    border: 1px solid purple;
+  }
+
+  .show-case-content .content {
+    text-align: center;
+    border: 1px solid green;
+    width: 100%;
+  }
+
+  .show-case-content .content h4 {
+    width: 90%;
+  }
+
+  .content a .btn {
+    margin: 1rem;
+    margin-top: 2rem;
     border: 1px solid red;
   }
 
-  .show-case-content {
-    border: 1px solid orange;
-  }
-
-  .show-case-content .content {
-    width: 70%;
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    width: 1200px;
-    height: auto;
-    overflow-x: hidden;
-  }
-}
-
-@media (max-width: 520px) {
-  header {
-    width: 1200px;
-    height: auto;
-    overflow-x: hidden;
-  }
-}
-
-@media (max-width: 400px) {
-  header {
-    width: 1200px;
-    height: auto;
-    overflow-x: hidden;
-  }
-}
-
-/******* Until 375px *******/
-
-@media (max-width: 376px) {
-  /* Header settings */
-
-  body {
-    overflow-x: hidden;
-  }
-
-  header {
-    width: 375px;
-    height: auto;
-    overflow-x: hidden;
-  }
-
-  .header {
-    width: 375px;
-    height: auto;
-    overflow-x: hidden;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #logo {
-    width: 150px;
-    border-radius: 0px;
-  }
-
-  #title {
-    font-size: 1.65rem;
-    overflow-x: hidden;
-  }
-
-  /* Navigation settings */
-  #menu-burger {
-    display: block;
-  }
-
-  nav ul li {
-    display: none;
-    overflow-x: hidden;
-  }
-
-  /* Showcase Section */
-  .show-case {
-    width: 375px;
-    height: auto;
-    overflow-x: hidden;
-    background: url(images/background-2.jpg);
-    background-repeat: no-repeat;
-  }
-
-  .show-case-content {
-    height: auto;
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 375px;
-    height: auto;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow-x: hidden;
-    width: 375px;
-    height: auto;
-    margin: 0;
-  }
-
-  .content #titular {
-    font-size: var(--h3-size);
-    margin: 9rem 0 1rem 0;
-    text-align: center;
-  }
-
-  .content h4 {
-    margin: 5rem 0 1rem 0;
-    padding: 0 1rem 0 1rem;
-  }
-
-  .content a .btn {
-    margin: 0;
-    margin: 2.5rem 0 10rem 0;
-  }
-
-  /* Serveis Section */
   .serveis {
-    width: 375px;
+    width: 100vw;
     height: auto;
     overflow-x: hidden;
-  }
-
-  .serveis h2 {
-    font-size: var(--h3-size);
-  }
-
-  .serveis-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 375px;
-    height: auto;
-    overflow-x: hidden;
-    gap: 2rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .serveis-container .instalacions,
-  .serveis-container .programacio,
-  .serveis-container .manteniment {
-    width: 90%;
-    border: 5px solid white;
-  }
-
-  .instalacions,
-  .programacio,
-  .manteniment {
-    padding: 1rem 1.5rem 1rem 1.5rem;
-  }
-
-  /* Carrusel de marcas */
-  .carrusel-marcas {
-    width: 375px;
-    height: auto;
-    overflow-x: hidden;
-    margin-bottom: 0;
-    padding-bottom: 2.5rem;
-  }
-
-  .carrusel-marcas h2 {
-    font-size: var(--h3-size);
-  }
-
-  .marcas img {
-    margin-bottom: 0;
   }
 
   .marcas {
-    margin-bottom: 0;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
   }
 
-  /* Parlem section */
   .parlem {
-    width: 375px;
+    width: 100vw;
     height: auto;
     overflow-x: hidden;
   }
 
-  .parlem-container {
-    width: 375px;
+  footer {
+    width: 100vw;
     height: auto;
-    overflow-x: hidden;
   }
 
-  .parlem-container h2 {
-    width: 375px;
-    font-size: var(--h3-size);
-    padding: 0 1rem 0 1rem;
-  }
-
-  .parlem-container a .btn {
-    font-size: 22px;
-  }
-
-  /* Footer */
   .footer-container {
-    width: 375px;
+    width: 100vw;
     height: auto;
-    overflow-x: hidden;
-    flex-direction: column;
-    gap: 5rem;
-  }
-
-  .footer-container .links {
-    justify-content: center;
-  }
-
-  .footer-container .contacte {
-    text-align: center;
-  }
-}
-
-/******* With until 360px *********/
-
-@media (max-width: 361px) {
-  header {
-    width: 380px;
-    overflow-x: hidden;
-    height: auto;
-  }
-
-  .header {
-    overflow-x: hidden;
-    width: 360px;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #logo {
-    width: 125px;
-  }
-
-  #title {
-    width: 360px;
-    height: auto;
-    font-size: 2rem;
-  }
-
-  /* Navigation settings */
-
-  nav {
-    margin-left: 0px;
-    width: 380px;
-    height: 35px;
-  }
-
-  /* Showcase Section */
-  .show-case {
-    width: 380px;
-  }
-
-  .show-case-content {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 380px;
+    justify-content: center;
   }
 
-  .content {
-    width: 360px;
-  }
-
-  .content #titular {
-    margin: 5rem 0 1rem 0;
-  }
-
-  .content h4 {
-    margin: 5rem 0 1rem 0;
-    padding: 0 1rem 0 1rem;
-  }
-
-  .content a .btn {
-    margin: 2.5rem 0 5rem 0;
-  }
-
-  /* Serveis Section */
-  .serveis {
-    width: 380px;
-  }
-
-  .serveis-container {
-    width: 380px;
-    margin-bottom: 5rem;
-  }
-
-  .instalacions,
-  .programacio,
-  .manteniment {
-    padding: 1rem;
-  }
-
-  /* Carrusel de marcas */
-  .carrusel-marcas {
-    width: 380px;
-    padding-bottom: 5rem;
-  }
-
-  /* Parlem section */
-  .parlem {
-    width: 380px;
-  }
-
-  .parlem-container h2 {
-    width: 380px;
-  }
-
-  .parlem-container a .btn {
-    font-size: 25px;
-  }
-
-  /* Footer */
-  footer {
-    width: 380px;
+  .log-info {
+    width: auto;
     height: auto;
     overflow-x: hidden;
+    border: 1px solid red;
   }
-  .footer-container {
-    width: 380px;
+  /*
+  .semi-small {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }*/
+
+  .links {
+    width: 50vw;
+    margin: 0;
+    padding: 0;
+    border: 1px solid green;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links ul {
+    width: auto;
+    padding: auto;
+    margin: 0;
+    border: 1px solid red;
+  }
+
+  .contacte {
+    margin: 0;
+    padding: 0;
+    border: 1px solid purple;
   }
 }
