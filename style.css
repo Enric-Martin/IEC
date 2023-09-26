@@ -777,40 +777,121 @@ footer {
   }
 }
 
-/*
-@media all and (max-width: 500px) {
-  .show-case {
-    background-color: red;
+@media all and (max-width: 540px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
   }
 
-  nav {
-    height: 4rem;
-
-    border: 1px solid green;
+  header {
+    width: 100vw;
+    overflow-x: hidden;
   }
 
-  nav ul {
-    height: 100%;
-    border: 1px solid red;
-  }
-
-  nav ul li a {
-    display: none;
-  }
-
-  #phone {
-    display: none;
-  }
-
-  #menu-burger {
-    border: 1px solid green;
-    width: 100px;
-    height: auto;
-    display: block;
+  .header {
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-}*/
+
+  nav ul li {
+    display: none;
+  }
+
+  #titular {
+    text-align: center;
+    font-size: var(--h3-size);
+    margin: 0 0 5rem 0;
+  }
+
+  .show-case {
+    height: 70vh;
+  }
+
+  .show-case-content .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .show-case-content .content h4 {
+    font-size: var(--h5-size);
+    width: auto;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
+  }
+
+  .show-case-content .content a .btn {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 0 0 0;
+  }
+
+  .serveis h2 {
+    font-size: var(--h3-size);
+  }
+
+  .serveis-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .instalacions,
+  .programacio,
+  .manteniment {
+    width: 100%;
+    margin: 0;
+  }
+
+  .instalacions h4,
+  .programacio h4,
+  .manteniment h4 {
+    font-size: var(--h5-size);
+  }
+
+  .instalacions p,
+  .programacio p,
+  .manteniment p {
+    font-size: var(--p-size);
+  }
+
+  .carrusel-marcas h2 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container h2 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container h4 {
+    font-size: var(--h5-size);
+  }
+
+  footer {
+    margin: 0;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    margin: 0;
+    width: 100vw;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-container .contacte {
+    text-align: center;
+  }
+}
 
 @media all and (max-width: 394px) {
   body {
@@ -922,6 +1003,10 @@ footer {
     flex-direction: column;
     gap: 2rem;
   }
+
+  .footer-container .contacte {
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 280px) {
@@ -1025,5 +1110,9 @@ footer {
     width: 100vw;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .footer-container .contacte {
+    text-align: center;
   }
 }
