@@ -20,8 +20,11 @@
   --btn-color: #1091c4;
   --main-color: #006699;
   --h1--size: 4rem;
+  --h25-size: 3.5rem;
   --h2-size: 3rem;
+  --h35--size: 2.5rem;
   --h3-size: 2rem;
+  --h45--size: 1.75rem;
   --h4-size: 1.5rem;
   --h5-size: 1.25rem;
   --p-size: 1rem;
@@ -102,6 +105,7 @@ nav ul li a:hover {
 
 #menu-burger {
   display: none;
+  position: absolute;
 }
 
 /* Show case section */
@@ -573,9 +577,6 @@ footer {
 }
 
 @media all and (max-width: 1000px) and (min-width: 900px) {
-  #logo {
-    border: 1px solid green;
-  }
   #title {
     font-size: var(--h3-size);
   }
@@ -590,6 +591,8 @@ footer {
 
   .show-case-content .content {
     width: 100%;
+    height: auto;
+    position: relative;
   }
 
   #titular {
@@ -613,7 +616,6 @@ footer {
   .instalacions h4,
   .programacio h4,
   .manteniment h4 {
-    border: 1px soloid purple;
     font-size: var(--h5-size);
   }
 
@@ -662,5 +664,254 @@ footer {
   .footer-container .contacte {
     font-size: var(--p-size);
     font-weight: normal;
+  }
+}
+
+@media all and (max-width: 900px) and (min-width: 800px) {
+  #title {
+    font-size: var(--h3-size);
+  }
+
+  nav ul li {
+    font-size: var(--h5-size);
+  }
+
+  .show-case {
+    height: 60vw;
+  }
+
+  .show-case-content .content {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #titular {
+    font-size: var(--h3-size);
+    width: auto;
+  }
+
+  .show-case-content .content h4 {
+    font-size: var(--h5-size);
+    width: 80%;
+  }
+
+  .content .btn {
+    font-size: var(--h5-size);
+  }
+
+  .serveis h2 {
+    font-size: var(--h3-size);
+  }
+
+  .instalacions h4,
+  .programacio h4,
+  .manteniment h4 {
+    font-size: var(--h5-size);
+  }
+
+  .instalacions p,
+  .programacio p,
+  .manteniment p {
+    font-size: var(--p-size);
+  }
+
+  .carrusel-marcas {
+    padding-bottom: 3.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .carrusel-marcas h2 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container h2 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container h4 {
+    font-size: var(--h4-size);
+    align-items: center;
+    text-align: center;
+  }
+
+  .parlem-container .btn {
+    font-size: var(--h5-size);
+  }
+
+  .footer-container .log-info p {
+    font-size: var(--p-size);
+  }
+
+  .log-info {
+    margin: 0;
+  }
+
+  .links ul li a {
+    font-size: var(--p-size);
+  }
+
+  .footer-container .contacte {
+    font-size: var(--p-size);
+    font-weight: normal;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #title {
+    font-size: var(--h3-size);
+  }
+
+  nav ul li {
+    font-size: var(--h5-size);
+  }
+
+  .show-case-content .content {
+    width: 70vw;
+  }
+
+  #titular {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*
+@media all and (max-width: 500px) {
+  .show-case {
+    background-color: red;
+  }
+
+  nav {
+    height: 4rem;
+
+    border: 1px solid green;
+  }
+
+  nav ul {
+    height: 100%;
+    border: 1px solid red;
+  }
+
+  nav ul li a {
+    display: none;
+  }
+
+  #phone {
+    display: none;
+  }
+
+  #menu-burger {
+    border: 1px solid green;
+    width: 100px;
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}*/
+
+@media all and (max-width: 281px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    display: none;
+  }
+
+  #titular {
+    text-align: center;
+    font-size: var(--h3-size);
+    margin: 0;
+  }
+
+  .show-case {
+    height: 90vh;
+  }
+
+  .show-case-content .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .show-case-content .content h4 {
+    font-size: var(--h5-size);
+    width: auto;
+    text-align: center;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+  }
+
+  .serveis h2 {
+    font-size: var(--h3-size);
+  }
+
+  .serveis-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .instalacions,
+  .programacio,
+  .manteniment {
+    width: 100%;
+    margin: 0;
+  }
+
+  .instalacions h4,
+  .programacio h4,
+  .manteniment h4 {
+    font-size: var(--h5-size);
+  }
+
+  .instalacions p,
+  .programacio p,
+  .manteniment p {
+    font-size: var(--p-size);
+  }
+
+  .carrusel-marcas h2 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container h2 {
+    font-size: var(--h3-size);
+  }
+
+  .parlem-container h4 {
+    font-size: var(--h5-size);
+  }
+
+  footer {
+    margin: 0;
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    margin: 0;
+    width: 100vw;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
